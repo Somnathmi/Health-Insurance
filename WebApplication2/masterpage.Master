@@ -1,0 +1,105 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="masterpage.master.cs" Inherits="WebApplication2.masterpage" %>
+
+<%@ Register Src="~/GeneralHeaderControl.ascx" TagPrefix="uc1" TagName="GeneralHeaderControl" %>
+
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style2 {
+            height: 520px;
+        }
+        .auto-style3 {
+            text-align: justify;
+        }
+        .auto-style4 {
+            height: 414px;
+        }
+        </style>
+</head>
+<body style="margin:0" bgcolor="white">
+    <form id="form1" runat="server">
+         <table width="100%" bgcolor="white" >
+            <tr>
+                <td>
+                    <%--<uc1:GeneralHeaderControl ID="GeneralHeaderControl1" runat="server" />--%>
+                    <uc1:GeneralHeaderControl runat="server" id="GeneralHeaderControl" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table width="100%">
+                        <tr>
+                            <td style="border:1px; border-bottom-color:Navy; border-bottom-style:solid; border-top-color:Navy; border-top-style:solid  " colspan="2" class="auto-style3" rowspan="1">
+                                <div>
+                            <asp:Menu ID="Menu1" runat ="server" BackColor="Transparent" 
+                                    DynamicHorizontalOffset="2" Font-Names="Verdana" Font-Size="1.5em" 
+                                    ForeColor="Navy" Orientation="Horizontal" StaticSubMenuIndent="10px" 
+                                    width="100%" Font-Bold="True" Height="20px" OnMenuItemClick="Menu1_MenuItemClick" >
+                                <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                                <DynamicHoverStyle BackColor="#2FB5D2" ForeColor="White" />
+                                <DynamicMenuStyle BackColor="Olive" />
+                                <StaticSelectedStyle BackColor="#FFCC66" />
+                                <DynamicSelectedStyle BackColor="#FFCC66" />
+                                <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                                <Items>
+
+                                    <asp:MenuItem Text="    |||" Value="|||"></asp:MenuItem>
+                                    <asp:MenuItem NavigateUrl="~/df.aspx" Text="Home" Value="Home"></asp:MenuItem>
+                                    <asp:MenuItem Text="|" Value="|" Selectable="False"></asp:MenuItem>
+                                    <asp:MenuItem Text="About Us" Value="Add Designatin" NavigateUrl="aboutus.aspx"></asp:MenuItem>
+                                    <asp:MenuItem Text="|" Value="|" Selectable="False"></asp:MenuItem>
+                                    <asp:MenuItem Text="Contact Us" Value="Add Policy" NavigateUrl="contact.aspx"></asp:MenuItem>
+                                    <asp:MenuItem Text="|" Value="|" Selectable="False"></asp:MenuItem>
+                                    <asp:MenuItem NavigateUrl="feed.aspx" Text="FeedBack" Value="FeedBack"></asp:MenuItem>
+                                    <asp:MenuItem Text="|" Value="|"></asp:MenuItem>
+                                    <asp:MenuItem NavigateUrl="Askq.aspx" Text="Ask Q" Value="Ask q"></asp:MenuItem>
+                                    <asp:MenuItem Text="|" Value="|"></asp:MenuItem>
+                                    <asp:MenuItem NavigateUrl="History.aspx" Text="History" Value="History"></asp:MenuItem>
+                                    <asp:MenuItem Text="|" Value="|" Selectable="False"></asp:MenuItem>
+                                    <asp:MenuItem Text="Member Login" Value="Employee Support" NavigateUrl="loginc.aspx">
+                                    </asp:MenuItem>
+                                    <asp:MenuItem Text="|" Value="|"></asp:MenuItem>
+                                    <asp:MenuItem NavigateUrl="addminlog.aspx" Text="Admin" Value="Admin"></asp:MenuItem>
+                                    <asp:MenuItem Text="|||" Value="|||"></asp:MenuItem>
+                                </Items>
+                                <StaticHoverStyle BackColor="#2FB5D2" ForeColor="White" />
+                            </asp:Menu>
+                             
+
+
+                                </div>
+                                <br />
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                             
+
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td bgcolor="white" class="auto-style2" >
+                                <div class="auto-style4" >
+                                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                                   </asp:ContentPlaceHolder>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center" bgcolor="#336666" style="height: 34px  ">
+                                <span style="color: white">&copy All Rights Reserved. </span>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

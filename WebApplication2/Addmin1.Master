@@ -1,0 +1,110 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Addmin1.master.cs" Inherits="WebApplication2.Addmin1" %>
+
+<%@ Register Src="~/GeneralHeaderControl.ascx" TagPrefix="uc1" TagName="GeneralHeaderControl" %>
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+                                    </asp:ContentPlaceHolder>
+
+    <style type="text/css">
+        .auto-style2 {
+            height: 526px;
+        }
+        .auto-style3 {
+            height: 572px;
+        }
+    </style>
+
+</head>
+<body style="margin-top:0" bgcolor="white">
+    <form id="form1" runat="server">
+    <table width="100%" bgcolor="white" >
+            <tr>
+                <td>
+
+
+                    <uc1:GeneralHeaderControl runat="server" ID="GeneralHeaderControl" />
+                 </td>
+            </tr>
+            <tr>
+                <td>
+                    <table width="100%" class="auto-style2">
+                        <tr>
+                            <td align="center" style="border:1px; border-bottom-color:navy; border-bottom-style:solid; border-top-color:Navy; border-top-style:solid ">
+                                <div>
+                                <asp:Menu ID="Menu1" runat="server"  BackColor="Transparent" 
+                                    DynamicHorizontalOffset="2" Font-Names="Verdana" Font-Size="1.5em" 
+                                    ForeColor="Navy" Orientation="Horizontal" StaticSubMenuIndent="10px" 
+                                    width="100%" Font-Bold="True" Height="20px">
+                                    <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                                <DynamicHoverStyle BackColor="#2FB5D2" ForeColor="white" />
+                                <DynamicMenuStyle BackColor="Olive" />
+                                <StaticSelectedStyle BackColor="#FFCC66" />
+                                <DynamicSelectedStyle BackColor="#FFCC66" />
+                                <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                                <Items>
+                                    <asp:MenuItem Text="    |||" Value="|||"></asp:MenuItem>
+                                    <asp:MenuItem NavigateUrl="Addhomepage.aspx" Text="Home" Value="Home"></asp:MenuItem>
+                                    <asp:MenuItem Text="|" Value="|" Selectable="False"></asp:MenuItem>
+
+                                    <asp:MenuItem Text="Add Policy" Value="Add Policy" NavigateUrl="Addpo.aspx"></asp:MenuItem>
+                                    <asp:MenuItem Text="|" Value="|" Selectable="False"></asp:MenuItem>
+                                     
+                                    <asp:MenuItem Text="User Info" Value="User Info" NavigateUrl="AdduserRg.aspx"></asp:MenuItem>
+                                    <asp:MenuItem Text="|" Value="|" Selectable="False"></asp:MenuItem>
+                                    <asp:MenuItem Text="Request Status" Value="ApprovedStatus" NavigateUrl="stuspolicy.aspx"></asp:MenuItem>
+                                    <asp:MenuItem Text="|" Value="|" Selectable="False"></asp:MenuItem>
+                                    <asp:MenuItem Text="User Q" Value="User Q" NavigateUrl="Quetion.aspx"></asp:MenuItem>
+                                    <asp:MenuItem Text="|" Value="|" Selectable="False"></asp:MenuItem>
+                                    <asp:MenuItem NavigateUrl="replyuser.aspx" Text="Reply User" Value="Reply"></asp:MenuItem>
+                                    
+                                    <asp:MenuItem Text="|" Value="|"></asp:MenuItem>
+                                    <asp:MenuItem NavigateUrl="WebForm3.aspx" Text="Log out" Value="Log out"></asp:MenuItem>
+                                    <asp:MenuItem Text="|||" Value="|||"></asp:MenuItem>
+                                </Items>
+                                <StaticHoverStyle BackColor="#2FB5D2" ForeColor="White" />
+
+
+
+                                </asp:Menu>
+                                </div>
+                                <br />
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                             
+
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td bgcolor="white" class="auto-style3" >
+                                <div style="height: 410px" >
+                                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                                    </asp:ContentPlaceHolder>
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                </div>
+                            </td>
+                        </tr>
+                        
+                        
+                        <tr>
+                            
+
+                            <td align="center" bgcolor="#336666" style="height: 37px">
+                                <span style="color: white">&copy All Rights Reserved. </span>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

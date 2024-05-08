@@ -1,0 +1,4 @@
+C:\Users\Somnath mithari\source\repos\WebApplication2\WebApplication2\obj\Debug\Health Insurance.csproj.AssemblyReference.cache
+C:\Users\Somnath mithari\source\repos\WebApplication2\WebApplication2\obj\Debug\Health Insurance.csproj.CoreCompileInputs.cache
+C:\Users\Somnath mithari\source\repos\WebApplication2\WebApplication2\obj\Debug\WebApplication2.dll
+C:\Users\Somnath mithari\source\repos\WebApplication2\WebApplication2\obj\Debug\WebApplication2.pdb
